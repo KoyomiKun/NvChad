@@ -49,6 +49,6 @@ local plugins = {
     opts = function ()
       return require "custom.configs.null-ls"
     end,
-  }
+  }, 
 }
 return plugins
