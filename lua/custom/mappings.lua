@@ -61,4 +61,15 @@ M.go = {
   }
 }
 
+M.rust = {
+  n = {
+    ["<LEADER>rcu"] = {
+      function ()
+        require('crates').upgrade_all_crates()
+      end,
+      "Update crates"
+    }
+  }
+}
+
 return M
