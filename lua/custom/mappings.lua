@@ -12,6 +12,7 @@ M.mine = {
     ["<LEADER><DOWN>"] = {"<C-w>j", "Move to below window"},
     ["<LEADER><UP>"] = {"<C-w>k", "Move to upper window"},
     ["tp"] = {":noh<CR>", "ignore select section"},
+    ["<LEADER>r"] = {":lua require'telescope.builtin'.lsp_document_symbols{}<CR>", "open tagbar"},
   }
 }
 
