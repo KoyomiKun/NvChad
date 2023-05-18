@@ -86,5 +86,15 @@ local plugins = {
       return M
     end
   },
+  {
+    "chentoast/marks.nvim",
+    opts = function ()
+      return require "custom.configs.marks"
+    end,
+    config = function (_, opts)
+      require('marks').setup(opts)
+    end,
+    lazy = false,
+  }
 }
 return plugins
