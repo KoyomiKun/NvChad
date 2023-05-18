@@ -1,6 +1,6 @@
 ---@type ChadrcConfig 
 local M = {}
-M.ui = {theme = 'aquarium'}
+M.ui = {theme = 'everforest'}
 M.mappings = require("custom.mappings")
 M.plugins = "custom.plugins"
 
@@ -17,5 +17,8 @@ vim.api.nvim_create_autocmd(
 	group = group
 	}
 )
+
+--9 lines keep below
+vim.o.scrolloff = 9
 
 return M
