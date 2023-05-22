@@ -4,7 +4,8 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls",
-        "rust-analyzer"
+        "rust-analyzer",
+        "jedi-language-server"
       }
     }
   },

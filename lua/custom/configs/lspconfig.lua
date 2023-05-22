@@ -21,3 +21,10 @@ lspconfig.gopls.setup {
   }
 }
 
+lspconfig.jedi_language_server.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = {"jedi-language-server"},
+  filetype = { "python" },
+  single_file_support = true,
+}
