@@ -20,5 +20,14 @@ vim.api.nvim_create_autocmd(
 
 --9 lines keep below
 vim.o.scrolloff = 9
+-- set tabstop=4
+-- set softtabstop=4
+-- set shiftwidth=4
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+
+
+vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/lua_snippets"
 
 return M

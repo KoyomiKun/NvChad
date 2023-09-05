@@ -5,7 +5,10 @@ local opts = {
 
   sources = {
     null_ls.builtins.formatting.gofmt,
-    null_ls.builtins.formatting.golines,
+    null_ls.builtins.formatting.goimports,
+    null_ls.builtins.formatting.stylua,
+    null_ls.builtins.formatting.shfmt,
+    null_ls.builtins.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
   },
 
   on_attach = function (client, bufnr)

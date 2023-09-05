@@ -3,9 +3,15 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        "lua-language-server",
+        "stylua",
+        "goimports",
+        "shfmt",
+        "shellcheck",
         "gopls",
         "rust-analyzer",
-        "jedi-language-server"
+        "jedi-language-server",
+        "lua-language-server"
       }
     }
   },
@@ -96,6 +102,6 @@ local plugins = {
       require('marks').setup(opts)
     end,
     lazy = false,
-  }
+  },
 }
 return plugins
